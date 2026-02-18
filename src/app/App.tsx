@@ -16,9 +16,7 @@ import {
 } from "lucide-react";
 import { getPlaceholderImage } from "@/app/config/placeholders";
 
-// Use placeholder for GitHub Pages deployment
-// Replace with actual image: /public/images/3e7d7607fcde0150bb6315b8d6796f02fa0b674a.png
-const heroImage = getPlaceholderImage('3e7d7607fcde0150bb6315b8d6796f02fa0b674a.png');
+const heroImage = '/images/hero.png';
 
 export default function App() {
   const [scrollY, setScrollY] = React.useState(0);
