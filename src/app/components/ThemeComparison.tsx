@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Sun, Moon } from 'lucide-react';
-import { getPlaceholderImage } from '@/app/config/placeholders';
 
 // Use placeholders for GitHub Pages deployment
 // Replace with actual images: /public/images/[hash].png
