@@ -14,7 +14,7 @@ import {
   Image,
   FileCode,
 } from "lucide-react";
-import { getPlaceholderImage } from "@/app/config/placeholders";
+
 
 const heroImage = '/Design-system-case-study/images/hero.jpg';
 
