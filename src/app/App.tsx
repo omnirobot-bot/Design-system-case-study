@@ -72,7 +72,7 @@ export default function App() {
         className="fixed inset-0 pointer-events-none"
         style={{
           background:
-            "linear-gradient(to bottom, rgba(7, 9, 16, 0.7) 0%, rgba(7, 9, 16, 0.70) 100%)",
+            "linear-gradient(to bottom, rgba(7, 9, 16, 0.7) 0%, rgba(7, 9, 16, 0.60) 100%)",
           zIndex: 1,
         }}
       />
