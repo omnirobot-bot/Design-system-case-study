@@ -4,7 +4,7 @@ import { getPlaceholderImage } from '@/app/config/placeholders';
 
 // Use placeholders for GitHub Pages deployment
 // Replace with actual images: /public/images/[hash].png
-const darkThemeImg = getPlaceholderImage('2859fd2813b789422148dc7593a9a22997bbc9a5.png');
+const darkThemeImg = /Design-system-case-study/images/dark@2.png;
 const lightThemeImg = getPlaceholderImage('b5333ffd9dc52b8d9f5946724102aa9e32735d46.png');
 
 export function ThemeComparison() {
