@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder Image Generator</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', -apple-system, system-ui, sans-serif;
+            background: #070910;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .instructions {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: left;
+        }
+        .instructions h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .instructions ol {
+            padding-left: 20px;
+        }
+        .instructions li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: rgba(255,255,255,0.7);
+        }
+        code {
+            background: rgba(0,0,0,0.3);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            color: #3b82f6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🖼️ Placeholder Images</h1>
+        <p>Tento projekt momentálně používá placeholder obrázky.<br>Pro produkční nasazení je nahraď skutečnými obrázky.</p>
+        
+        <div class="instructions">
+            <h2>📋 Jak nahradit obrázky:</h2>
+            <ol>
+                <li>Exportuj obrázky z Figma Make (pravý klik → Save image)</li>
+                <li>Přejmenuj je na hashy z <code>images.ts</code></li>
+                <li>Nahraď soubory v <code>/public/images/</code></li>
+                <li>Commitni a pushni na GitHub</li>
+            </ol>
+            <p style="margin-top: 20px; color: rgba(255,255,255,0.5); font-size: 14px;">
+                Detailní návod: <code>/public/images/README.md</code>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
