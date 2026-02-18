@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import { getPlaceholderImage } from "@/app/config/placeholders";
 
-const heroImage = '/images/hero.jpg';
+const heroImage = '/Design-system-case-study/images/hero.jpg';
 
 export default function App() {
   const [scrollY, setScrollY] = React.useState(0);
