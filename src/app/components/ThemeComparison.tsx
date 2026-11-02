@@ -249,14 +249,14 @@ export function ThemeComparison() {
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style={{ pointerEvents: 'none' }}>
             <path
-              d="M9 18L3 12L9 6"
+              d="M7 18L1 12L7 6"
               stroke="currentColor"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
             <path
-              d="M15 18L21 12L15 6"
+              d="M17 18L23 12L17 6"
               stroke="currentColor"
               strokeWidth="2"
               strokeLinecap="round"
