@@ -100,8 +100,8 @@ export default function App() {
               background:
                 "radial-gradient(circle, rgba(59, 130, 246, 0.8) 0%, transparent 70%)",
               filter: "blur(100px)",
-              willChange: "transform",
-              animation: "float1 20s ease-in-out infinite",
+              // willChange: "transform",
+              // animation: "float1 20s ease-in-out infinite",
             }}
           />
         </div>
@@ -124,8 +124,8 @@ export default function App() {
               background:
                 "radial-gradient(circle, rgba(168, 85, 247, 0.7) 0%, transparent 70%)",
               filter: "blur(100px)",
-              willChange: "transform",
-              animation: "float2 15s ease-in-out infinite",
+              // willChange: "transform",
+              // animation: "float2 15s ease-in-out infinite",
             }}
           />
         </div>
@@ -476,7 +476,7 @@ export default function App() {
                     </p>
                     <p>Core tokens are intentionally abstract and internal.
                     </p>
-                    <p className="text-white/50 text-xs">
+                    <p>
                       Not directly consumed by product UI.
                     </p>
                     
@@ -499,7 +499,7 @@ export default function App() {
                     <p>
                       Designers select brand and mode (e.g., Avast Light/Dark) without interacting with core values directly.
                     </p>
-                    <p className="text-white/50 text-xs">
+                    <p>
                       The only layer responsible for brand identity.
                     </p>
                   </div>
@@ -521,7 +521,7 @@ export default function App() {
                     <p>
                       Platform selection may trigger structural component changes (e.g., native iOS switch vs desktop switch).
                     </p>
-                    <p className="text-white/50 text-xs">
+                    <p>
                       Overrides are restricted to platform-native behavior.
                     </p>
                   </div>
@@ -592,7 +592,7 @@ export default function App() {
                     </p>
                     <p>With Figma Variables, token collections were restructured into Core, Themes, and Platform layers.
                     </p>
-                    <p className="text-white/50 text-xs">
+                    <p>
                       Refactoring was executed incrementally without interrupting product delivery.
                     </p>
                     
@@ -613,7 +613,7 @@ export default function App() {
                     <p>
                       Platform teams received token updates through structured pull requests, allowing review and adjustment before integration.
                     </p>
-                   <p className="text-white/50 text-xs">
+                   <p>
                     Platform-specific filtering ensured native alignment and stability.
                   </p>
                    
@@ -737,7 +737,7 @@ export default function App() {
                     </p>
                     <p>Atomic components were centralized in Core to eliminate platform duplication.
                     </p>
-                    <p className="text-white/50 text-xs">
+                    <p>
                       Shared logic. Separated identity.
                     </p>
                     
@@ -757,7 +757,7 @@ export default function App() {
                     </p>
                     <p>New themes can be introduced without rebuilding components.
                     </p>
-                    <p className="text-white/50 text-xs">
+                    <p>
                       Theming without structural changes.
                     </p>
                     

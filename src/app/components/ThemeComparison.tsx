@@ -215,8 +215,7 @@ export function ThemeComparison() {
         style={{
           left: `${dividerPosition}%`,
           width: '2px',
-          backgroundColor: 'rgba(255, 255, 255, 0.8)',
-          boxShadow: '0 0 20px rgba(255, 255, 255, 0.5)',
+          backgroundColor: '#FFFFFF',
           transform: 'translateX(-50%)',
           zIndex: 10,
         }}
@@ -227,8 +226,9 @@ export function ThemeComparison() {
           style={{
             width: '48px',
             height: '48px',
-            backgroundColor: 'var(--color-surface)',
-            border: '2px solid rgba(255, 255, 255, 0.8)',
+            backgroundColor: '#0F1423',
+            color: '#FFFFFF',
+            border: '2px solid #FFFFFF',
             borderRadius: '50%',
             transform: 'translate(-50%, -50%)',
             cursor: 'ew-resize',
@@ -249,20 +249,18 @@ export function ThemeComparison() {
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style={{ pointerEvents: 'none' }}>
             <path
-              d="M15 18L9 12L15 6"
+              d="M9 18L3 12L9 6"
               stroke="currentColor"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              opacity="0.6"
             />
             <path
-              d="M9 18L15 12L9 6"
+              d="M15 18L21 12L15 6"
               stroke="currentColor"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              opacity="0.6"
             />
           </svg>
         </div>
