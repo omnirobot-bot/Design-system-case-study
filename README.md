@@ -27,5 +27,10 @@ site and publishes it to GitHub Pages.
 ## Structure
 
 - `src/app/App.tsx` – all page sections
-- `src/app/components/` – GlassCard, Badge, ThemeComparison
+- `src/app/components/`
+  - `GlassCard` – card container used in every section
+  - `Badge` – brand, platform and token-tier labels
+  - `ThemeComparison` – light/dark comparison slider
+  - `figma/ImageWithFallback` – not used by the page
+- `src/styles/theme.css` – CSS variables, including the slider colors
 - `public/images/` – hero background and theme screenshots

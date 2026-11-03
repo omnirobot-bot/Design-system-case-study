@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Sun, Moon } from 'lucide-react';
 
-// Use placeholders for GitHub Pages deployment
-// Replace with actual images: /public/images/[hash].png
 const darkThemeImg = '/Design-system-case-study/images/dark@2x.png';
 const lightThemeImg = '/Design-system-case-study/images/light@2x.png';
 
@@ -215,7 +213,7 @@ export function ThemeComparison() {
         style={{
           left: `${dividerPosition}%`,
           width: '2px',
-          backgroundColor: '#FFFFFF',
+          backgroundColor: 'var(--color-on-surface)',
           transform: 'translateX(-50%)',
           zIndex: 10,
         }}
@@ -226,13 +224,13 @@ export function ThemeComparison() {
           style={{
             width: '48px',
             height: '48px',
-            backgroundColor: '#0F1423',
-            color: '#FFFFFF',
-            border: '2px solid #FFFFFF',
+            backgroundColor: 'var(--color-surface)',
+            color: 'var(--color-on-surface)',
+            border: '2px solid var(--color-on-surface)',
             borderRadius: '50%',
             transform: 'translate(-50%, -50%)',
             cursor: 'ew-resize',
-            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.4)',
+            boxShadow: 'var(--shadow-handle)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -270,12 +268,12 @@ export function ThemeComparison() {
       <div
         className="absolute top-4 left-4 px-3 py-1.5"
         style={{
-          backgroundColor: 'rgba(255, 255, 255, 0.9)',
+          backgroundColor: 'var(--color-label-light)',
           borderRadius: 'var(--radius-md)',
           fontFamily: 'var(--font-family-sans)',
           fontSize: 'var(--font-size-sm)',
           fontWeight: 600,
-          color: '#000',
+          color: 'var(--color-on-label-light)',
           zIndex: 11,
         }}
       >
@@ -285,12 +283,12 @@ export function ThemeComparison() {
       <div
         className="absolute top-4 right-4 px-3 py-1.5"
         style={{
-          backgroundColor: 'rgba(0, 0, 0, 0.8)',
+          backgroundColor: 'var(--color-label-dark)',
           borderRadius: 'var(--radius-md)',
           fontFamily: 'var(--font-family-sans)',
           fontSize: 'var(--font-size-sm)',
           fontWeight: 600,
-          color: '#fff',
+          color: 'var(--color-on-label-dark)',
           zIndex: 11,
         }}
       >

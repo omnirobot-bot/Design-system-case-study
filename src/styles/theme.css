@@ -85,6 +85,20 @@
   --sidebar-border: rgba(255, 255, 255, 0.15);
   /* The default color for focus rings, outlines, and other focus indicators in sidebars and navigation menus. */
   --sidebar-ring: rgba(15, 113, 240, 1.00);
+  /* The background color for the theme comparison slider and its handle. */
+  --color-surface: rgba(15, 20, 35, 1.00);
+  /* The color for icons, borders and lines that appear on top of the surface color, such as the slider handle and divider. */
+  --color-on-surface: rgba(255, 255, 255, 1.00);
+  /* The background color for the "Light" label in the theme comparison. */
+  --color-label-light: rgba(255, 255, 255, 0.90);
+  /* The text color for the "Light" label in the theme comparison. */
+  --color-on-label-light: rgba(0, 0, 0, 1.00);
+  /* The background color for the "Dark" label in the theme comparison. */
+  --color-label-dark: rgba(0, 0, 0, 0.80);
+  /* The text color for the "Dark" label in the theme comparison. */
+  --color-on-label-dark: rgba(255, 255, 255, 1.00);
+  /* Shadow for the theme comparison slider handle. */
+  --shadow-handle: 0 4px 12px rgba(0, 0, 0, 0.40);
 }
 
 .dark {

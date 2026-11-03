@@ -1,7 +1,6 @@
 import React from "react";
 import { Badge } from "@/app/components/Badge";
 import { GlassCard } from "@/app/components/GlassCard";
-import { DSButton } from "@/app/components/DSButton";
 import { ThemeComparison } from "@/app/components/ThemeComparison";
 import {
   Target,
