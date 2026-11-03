@@ -244,16 +244,16 @@ export default function App() {
                   Platforms
                 </p>
                 <div className="flex items-center justify-center gap-3 flex-wrap">
-                  <Badge color="green" variant="outline">
+                  <Badge color="green" variant="glow">
                     Windows
                   </Badge>
-                  <Badge color="green" variant="outline">
+                  <Badge color="green" variant="glow">
                     macOS
                   </Badge>
-                  <Badge color="green" variant="outline">
+                  <Badge color="green" variant="glow">
                     iOS
                   </Badge>
-                  <Badge color="green" variant="outline">
+                  <Badge color="green" variant="glow">
                     Android
                   </Badge>
                 </div>
