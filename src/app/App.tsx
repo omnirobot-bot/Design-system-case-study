@@ -716,71 +716,68 @@ export default function App() {
                 Outcomes & Impact
               </h2>
               <p className="text-lg sm:text-xl text-white/80 px-2 sm:px-4">
-                The impact was structural. Duplication decreased. Scaling became predictable.
+                Scaling now happens within the system, not around it.
               </p>
             </div>
 
+            {/* Before / After pairs: subgrid keeps the After rows aligned across cards */}
             <div className="grid md:grid-cols-3 gap-6">
-               <GlassCard padding="lg">
+              <GlassCard padding="lg" className="grid gap-6 md:row-span-2 md:grid-rows-subgrid">
                 <div className="space-y-4">
-                 
-                  <h3 className="text-white h3-original">
-                    Structural Consolidation
-                  </h3>
-                  <div className="space-y-3 text-sm text-white/70 leading-relaxed">
-                    <p>
-                      Fragmented brand libraries were unified under a shared component architecture.
-                    </p>
-                    <p>Atomic components were centralized in Core to eliminate platform duplication.
-                    </p>
-                    <p>
-                      Shared logic. Separated identity.
-                    </p>
-                    
-                  </div>
+                  <Badge color="neutral" variant="outline">
+                    Before
+                  </Badge>
+                  <p className="text-sm text-white/70 leading-relaxed">
+                    Each brand had its own UI library and implementation logic.
+                  </p>
+                </div>
+                <div className="space-y-4 border-t border-white/10 pt-6">
+                  <Badge color="blue" variant="glow">
+                    After
+                  </Badge>
+                  <p className="text-base text-white leading-relaxed">
+                    One component architecture behind 18 brand themes, plus white-label partner themes.
+                  </p>
                 </div>
               </GlassCard>
 
-              <GlassCard padding="lg">
+              <GlassCard padding="lg" className="grid gap-6 md:row-span-2 md:grid-rows-subgrid">
                 <div className="space-y-4">
-                  
-                  <h3 className="text-white h3-original">
-                    Scalable Theming
-                  </h3>
-                  <div className="space-y-3 text-sm text-white/70 leading-relaxed">
-                    <p>
-                      All brands and partner themes operate on the same component structure.
-                    </p>
-                    <p>New themes can be introduced without rebuilding components.
-                    </p>
-                    <p>
-                      Theming without structural changes.
-                    </p>
-                    
-                  </div>
+                  <Badge color="neutral" variant="outline">
+                    Before
+                  </Badge>
+                  <p className="text-sm text-white/70 leading-relaxed">
+                    Desktop and mobile diverged, duplicating work.
+                  </p>
+                </div>
+                <div className="space-y-4 border-t border-white/10 pt-6">
+                  <Badge color="blue" variant="glow">
+                    After
+                  </Badge>
+                  <p className="text-base text-white leading-relaxed">
+                    Atomic components live once in Core and serve Windows, macOS, iOS, and Android.
+                  </p>
                 </div>
               </GlassCard>
 
-              <GlassCard padding="lg">
+              <GlassCard padding="lg" className="grid gap-6 md:row-span-2 md:grid-rows-subgrid">
                 <div className="space-y-4">
-                  
-                  <h3 className="text-white h3-original">
-                    Design–Engineering Alignment
-                  </h3>
-                  <div className="space-y-3 text-sm text-white/70 leading-relaxed">
-                    <p>
-                      Token standardization created a shared vocabulary between design and engineering.
-                    </p>
-                    <p>Token updates reached platform teams as reviewable pull requests instead of Slack messages and manual tickets.
-                    </p>
-                    <p>Scaling now happens within the system, not around it.</p>
-                    
-       
-                    
-                  </div>
+                  <Badge color="neutral" variant="outline">
+                    Before
+                  </Badge>
+                  <p className="text-sm text-white/70 leading-relaxed">
+                    Handoff ran through Slack and manual tickets.
+                  </p>
+                </div>
+                <div className="space-y-4 border-t border-white/10 pt-6">
+                  <Badge color="blue" variant="glow">
+                    After
+                  </Badge>
+                  <p className="text-base text-white leading-relaxed">
+                    Token updates reach platform teams as reviewable pull requests.
+                  </p>
                 </div>
               </GlassCard>
-              
             </div>
           </div>
         </section>
