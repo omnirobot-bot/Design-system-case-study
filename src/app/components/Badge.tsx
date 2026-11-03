@@ -37,7 +37,7 @@ export function Badge({ children, color = 'neutral', variant = 'outline' }: Badg
 
   return (
     <span
-      className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium border ${colorClasses[color][variant]}`}
+      className={`inline-flex items-center h-8 px-4 rounded-full text-sm leading-none font-medium border ${colorClasses[color][variant]}`}
       style={{ fontFamily: 'var(--font-family-mono)' }}
     >
       {children}
