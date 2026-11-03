@@ -287,7 +287,7 @@ export default function App() {
                   <h3 className="text-white h3-original">
                     Problem
                   </h3>
-                  <div className="space-y-2 text-white/70 text-sm leading-relaxed">
+                  <div className="space-y-2 text-white/70 text-base leading-6">
                     <p>
                       Brands evolved separate UI libraries and implementation logic.
                     </p>
@@ -309,7 +309,7 @@ export default function App() {
                   <h3 className="text-white h3-original">
                     Goals
                   </h3>
-                  <div className="space-y-2 text-white/70 text-sm leading-relaxed">
+                  <div className="space-y-2 text-white/70 text-base leading-6">
                     <p>
                       Consolidate fragmented brand libraries
                       into a unified component system.
@@ -337,7 +337,7 @@ export default function App() {
                   <h3 className="text-white h3-original">
                     Constraints
                   </h3>
-                  <div className="space-y-2 text-white/70 text-sm leading-relaxed">
+                  <div className="space-y-2 text-white/70 text-base leading-6">
                     <p>
                       The system could not be rebuilt in
                       isolation.
@@ -384,7 +384,7 @@ export default function App() {
                     <h3 className="text-white h3-original">
                       Design Layer
                     </h3>
-                    <p className="text-white/70 text-sm">
+                    <p className="text-white/70 text-base leading-6">
                       Unified Figma libraries containing Core, Desktop, and Mobile components connected through shared variables.
                     </p>
                   </div>
@@ -401,7 +401,7 @@ export default function App() {
                     <h3 className="text-white h3-original">
                       Token Layer
                     </h3>
-                    <p className="text-white/70 text-sm">
+                    <p className="text-white/70 text-base leading-6">
                       A three-tier token model separating Core primitives, Semantic brand themes, and Platform-specific adaptations.
                     </p>
                   </div>
@@ -418,7 +418,7 @@ export default function App() {
                     <h3 className="text-white h3-original">
                       Automation Layer
                     </h3>
-                    <p className="text-white/70 text-sm">
+                    <p className="text-white/70 text-base leading-6">
                       Supernova used for token export and documentation generation.
                     </p>
                   </div>
@@ -435,7 +435,7 @@ export default function App() {
                     <h3 className="text-white h3-original">
                       Platform Layer
                     </h3>
-                    <p className="text-white/70 text-sm">
+                    <p className="text-white/70 text-base leading-6">
                       Windows, macOS, iOS, and Android implementations consuming tokens with platform-specific constraints applied. The commercial website adopted a subset of core tokens alongside its own library.
                     </p>
                   </div>
@@ -469,7 +469,7 @@ export default function App() {
                   <h3 className="text-white h3-original">
                     Core tokens
                   </h3>
-                  <div className="space-y-3 text-sm text-white/70 leading-relaxed">
+                  <div className="space-y-2 text-base text-white/70 leading-6">
                     <p>
                       Brand-agnostic primitives for color, typography, spacing, elevation, and motion.
                     </p>
@@ -491,7 +491,7 @@ export default function App() {
                   <h3 className="text-white h3-original">
                     Semantic themes
                   </h3>
-                  <div className="space-y-3 text-sm text-white/70 leading-relaxed">
+                  <div className="space-y-2 text-base text-white/70 leading-6">
                     <p>
                       Brand-level mappings that connect identity decisions to core primitives.
                     </p>
@@ -513,7 +513,7 @@ export default function App() {
                   <h3 className="text-white h3-original">
                     Platform tokens
                   </h3>
-                  <div className="space-y-3 text-sm text-white/70 leading-relaxed">
+                  <div className="space-y-2 text-base text-white/70 leading-6">
                     <p>
                       Controlled overrides for platform-specific behavior and native requirements.
                     </p>
@@ -555,7 +555,7 @@ export default function App() {
               style={{ maxWidth: "1152px", margin: "0 auto" }}
             >
               <ThemeComparison />
-              <p className="text-white/70 mt-6 text-center">
+              <p className="text-white/70 text-base leading-6 mt-6 text-center">
                    Identical component structure across brands. Identity applied at the token layer only. 
                   </p>
             </div>
@@ -585,7 +585,7 @@ export default function App() {
                   <h3 className="text-white h3-original">
                     System Evolution
                   </h3>
-                  <div className="space-y-3 text-sm text-white/70 leading-relaxed">
+                  <div className="space-y-2 text-base text-white/70 leading-6">
                     <p>
                       The initial phase relied on plugin-based brand switching within Figma and manual coordination with engineering teams.
                     </p>
@@ -602,7 +602,7 @@ export default function App() {
                   <h3 className="text-white h3-original">
                     Token Pipeline
                   </h3>
-                  <div className="space-y-3 text-sm text-white/70 leading-relaxed">
+                  <div className="space-y-2 text-base text-white/70 leading-6">
                     <p>
                       Supernova automated token exports and documentation generation from structured variable collections.
                     </p>
@@ -650,10 +650,10 @@ export default function App() {
                     <h3 className="text-white h3-original">
                       Architecture & Components
                     </h3>
-                    <p className="text-white/70 text-sm">
+                    <p className="text-white/70 text-base leading-6">
                       Implemented core and desktop component architecture during consolidation and migration to Figma Variables. The system was built as one whole, so the same components and tokens also served mobile.
                     </p>
-                    <p className="text-white/70 text-sm">
+                    <p className="text-white/70 text-base leading-6">
                       Migrated most atomic components into a shared Core library to eliminate duplication and maximize reuse.
                     </p>
                   </div>
@@ -670,10 +670,10 @@ export default function App() {
                     <h3 className="text-white h3-original">
                       Asset System
                     </h3>
-                    <p className="text-white/70 text-sm">
+                    <p className="text-white/70 text-base leading-6">
                       Designed and structured the cross-platform asset system covering launcher icons, system tray assets, installers, and browser extensions.
                     </p>
-                    <p className="text-white/70 text-sm">
+                    <p className="text-white/70 text-base leading-6">
                       Ensured brand switching logic remained consistent across UI and OS-level integrations.
                     </p>
                   </div>
@@ -690,7 +690,7 @@ export default function App() {
                     <h3 className="text-white h3-original">
                       Token Structure & Naming
                     </h3>
-                    <p className="text-white/70 text-sm">
+                    <p className="text-white/70 text-base leading-6">
                       Defined token structure and naming conventions and aligned development teams to them, adapting only where platform constraints required.
                     </p>
                     
@@ -727,7 +727,7 @@ export default function App() {
                   <Badge color="neutral" variant="outline">
                     Before
                   </Badge>
-                  <p className="text-sm text-white/70 leading-relaxed">
+                  <p className="text-base text-white/70 leading-6">
                     Each brand had its own UI library and implementation logic.
                   </p>
                 </div>
@@ -735,7 +735,7 @@ export default function App() {
                   <Badge color="blue" variant="glow">
                     After
                   </Badge>
-                  <p className="text-base text-white leading-relaxed">
+                  <p className="text-base text-white leading-6">
                     One component architecture behind 18 brand themes, plus white-label partner themes.
                   </p>
                 </div>
@@ -746,7 +746,7 @@ export default function App() {
                   <Badge color="neutral" variant="outline">
                     Before
                   </Badge>
-                  <p className="text-sm text-white/70 leading-relaxed">
+                  <p className="text-base text-white/70 leading-6">
                     Desktop and mobile diverged, duplicating work.
                   </p>
                 </div>
@@ -754,7 +754,7 @@ export default function App() {
                   <Badge color="blue" variant="glow">
                     After
                   </Badge>
-                  <p className="text-base text-white leading-relaxed">
+                  <p className="text-base text-white leading-6">
                     Atomic components live once in Core and serve Windows, macOS, iOS, and Android.
                   </p>
                 </div>
@@ -765,7 +765,7 @@ export default function App() {
                   <Badge color="neutral" variant="outline">
                     Before
                   </Badge>
-                  <p className="text-sm text-white/70 leading-relaxed">
+                  <p className="text-base text-white/70 leading-6">
                     Handoff ran through Slack and manual tickets.
                   </p>
                 </div>
@@ -773,7 +773,7 @@ export default function App() {
                   <Badge color="blue" variant="glow">
                     After
                   </Badge>
-                  <p className="text-base text-white leading-relaxed">
+                  <p className="text-base text-white leading-6">
                     Token updates reach platform teams as reviewable pull requests.
                   </p>
                 </div>
