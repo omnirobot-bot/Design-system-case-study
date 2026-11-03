@@ -198,7 +198,7 @@ export default function App() {
                   className="text-5xl md:text-7xl lg:text-8xl tracking-tight px-2 sm:px-4"
                   style={{
                     background:
-                      "linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%)",
+                      "linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     fontWeight: 800,
@@ -209,15 +209,15 @@ export default function App() {
                   <br />
                   System at Scale
                 </h1>
-                <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-3xl mx-auto px-2 sm:px-4">
-                 A unified design system connecting product experience across brands and platforms.
+                <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto px-2 sm:px-4">
+                 One component system behind 18 brand themes on four platforms.
                 </p>
               </div>
 
               {/* Brands */}
               <div className="space-y-3">
-                <p className="text-sm text-white/40 uppercase tracking-wider">
-                  Brands
+                <p className="text-sm text-white/80 uppercase tracking-wider">
+                  Brands at Gen (formerly Avast), 2016–2025
                 </p>
                 <div className="flex items-center justify-center gap-3 flex-wrap">
                   <Badge color="yellow" variant="glow">
@@ -240,7 +240,7 @@ export default function App() {
 
               {/* Platforms */}
               <div className="space-y-3">
-                <p className="text-sm text-white/40 uppercase tracking-wider">
+                <p className="text-sm text-white/80 uppercase tracking-wider">
                   Platforms
                 </p>
                 <div className="flex items-center justify-center gap-3 flex-wrap">
@@ -248,7 +248,7 @@ export default function App() {
                     Windows
                   </Badge>
                   <Badge color="green" variant="outline">
-                    MacOS
+                    macOS
                   </Badge>
                   <Badge color="green" variant="outline">
                     iOS
@@ -272,7 +272,7 @@ export default function App() {
               >
                 Context
               </h2>
-              <p className="text-lg sm:text-xl text-white/60 max-w-3xl mx-auto px-2 sm:px-4">
+              <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto px-2 sm:px-4">
                 Building a scalable, maintainable design system
                 for multiple brands and platforms
               </p>
@@ -323,7 +323,7 @@ export default function App() {
                     </p>
                     <p>
                       Gradually transition from manual handoff
-                      to an automated token pipeline
+                      to an automated token pipeline.
                     </p>
                   </div>
                 </div>
@@ -368,8 +368,8 @@ export default function App() {
               >
                 Architecture Overview
               </h2>
-              <p className="text-lg sm:text-xl text-white/60 px-2 sm:px-4">
-                The system was refactored incrementally without stopping delivery. Brand libraries were consolidated step by step into a shared architecture.
+              <p className="text-lg sm:text-xl text-white/80 px-2 sm:px-4">
+                Brand libraries were consolidated into one shared architecture with four layers.
               </p>
             </div>
 
@@ -436,7 +436,7 @@ export default function App() {
                       Platform Layer
                     </h3>
                     <p className="text-white/70 text-sm">
-                      Web, Windows, macOS, iOS, and Android implementations consuming tokens with platform-specific constraints applied.
+                      Windows, macOS, iOS, and Android implementations consuming tokens with platform-specific constraints applied. The commercial website adopted a subset of core tokens alongside its own library.
                     </p>
                   </div>
                 </div>
@@ -455,7 +455,7 @@ export default function App() {
               >
                 Token Architecture
               </h2>
-              <p className="text-lg sm:text-xl text-white/60 px-2 sm:px-4">
+              <p className="text-lg sm:text-xl text-white/80 px-2 sm:px-4">
                 A three-tier token structure was introduced to prevent duplication and maintain clarity at scale.
               </p>
             </div>
@@ -544,8 +544,8 @@ export default function App() {
               >
                 Multibrand Architecture
               </h2>
-              <p className="text-lg sm:text-xl text-white/60 px-2 sm:px-4">
-                A single component architecture powers multiple brands and partner themes.
+              <p className="text-lg sm:text-xl text-white/80 px-2 sm:px-4">
+                A single component architecture powers 18 brand themes and white-label partner themes.
                 <br />
                 Differentiation is applied exclusively at the token layer.
               </p>
@@ -573,7 +573,7 @@ export default function App() {
               >
                 Tooling & Pipeline
               </h2>
-              <p className="text-lg sm:text-xl text-white/60 px-2 sm:px-4">
+              <p className="text-lg sm:text-xl text-white/80 px-2 sm:px-4">
                 The tooling evolved together with the design system. It moved from manual workflows to structured variables and controlled token exports.
               </p>
             </div>
@@ -590,9 +590,6 @@ export default function App() {
                       The initial phase relied on plugin-based brand switching within Figma and manual coordination with engineering teams.
                     </p>
                     <p>With Figma Variables, token collections were restructured into Core, Themes, and Platform layers.
-                    </p>
-                    <p>
-                      Refactoring was executed incrementally without interrupting product delivery.
                     </p>
                     
                   </div>
@@ -636,8 +633,8 @@ export default function App() {
               >
                 Scope & Contribution
               </h2>
-              <p className="text-lg sm:text-xl text-white/60 px-2 sm:px-4">
-                My focus spanned core architecture, component implementation, and cross-platform asset infrastructure across both system phases.{" "}
+              <p className="text-lg sm:text-xl text-white/80 px-2 sm:px-4">
+                My focus spanned core architecture, component implementation, and cross-platform asset infrastructure across both phases: plugin-based theming and the migration to Figma Variables.{" "}
               </p>
             </div>
 
@@ -654,7 +651,7 @@ export default function App() {
                       Architecture & Components
                     </h3>
                     <p className="text-white/70 text-sm">
-                      Implemented core and desktop component architecture during consolidation and migration to Figma Variables. 
+                      Implemented core and desktop component architecture during consolidation and migration to Figma Variables. The system was built as one whole, so the same components and tokens also served mobile.
                     </p>
                     <p className="text-white/70 text-sm">
                       Migrated most atomic components into a shared Core library to eliminate duplication and maximize reuse.
@@ -718,8 +715,8 @@ export default function App() {
               >
                 Outcomes & Impact
               </h2>
-              <p className="text-lg sm:text-xl text-white/60 px-2 sm:px-4">
-                The impact was structural. Duplication decreased. Ownership became clear. Scaling became predictable.
+              <p className="text-lg sm:text-xl text-white/80 px-2 sm:px-4">
+                The impact was structural. Duplication decreased. Scaling became predictable.
               </p>
             </div>
 
@@ -774,7 +771,7 @@ export default function App() {
                     <p>
                       Token standardization created a shared vocabulary between design and engineering.
                     </p>
-                    <p>Structured exports and controlled pull requests improved consistency, reduced manual errors, and accelerated updates across platforms.
+                    <p>Token updates reached platform teams as reviewable pull requests instead of Slack messages and manual tickets.
                     </p>
                     <p>Scaling now happens within the system, not around it.</p>
                     
