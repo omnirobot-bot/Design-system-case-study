@@ -788,14 +788,32 @@ export default function App() {
 
         {/* Footer */}
         <section className="py-16 px-8 text-center">
-          <div className="space-y-4">
-            <p className="text-white/60">
-              Enterprise Design System Architecture
-            </p>
-            <p className="text-white/40 text-sm">
-              Multibrand, multiplatform token-driven system
-            </p>
-            <p className="text-white/30 text-sm">2025</p>
+          <div className="space-y-12">
+            <div className="space-y-4">
+              <p className="text-white/60">
+                Enterprise Design System Architecture
+              </p>
+              <p className="text-white/40 text-sm">
+                Multibrand, multiplatform token-driven system
+              </p>
+              <p className="text-white/30 text-sm">2025</p>
+            </div>
+
+            {/* More work */}
+            <div className="space-y-2">
+              <p className="text-sm uppercase tracking-wider text-[var(--color-on-surface)]/80">
+                More work
+              </p>
+              <a
+                href="https://servista-service-book.vercel.app/case-study"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-base leading-6 text-[var(--color-on-surface)] underline underline-offset-4 hover:opacity-80 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-on-surface)]"
+              >
+                Personal project: Servista case study
+                <span className="sr-only"> (opens in a new tab)</span>
+              </a>
+            </div>
           </div>
         </section>
       </div>
