@@ -12,10 +12,13 @@ import {
   Box,
   Image,
   FileCode,
+  ArrowUpRight,
 } from "lucide-react";
 
 
 const heroImage = '/Design-system-case-study/images/hero.jpg';
+const servistaIcon = '/Design-system-case-study/images/servista-icon.png';
+const servistaThumb = '/Design-system-case-study/images/servista-thumb.png';
 
 export default function App() {
   const [scrollY, setScrollY] = React.useState(0);
@@ -800,7 +803,7 @@ export default function App() {
             </div>
 
             {/* More work */}
-            <div className="space-y-2">
+            <div className="space-y-4">
               <p className="text-sm uppercase tracking-wider text-[var(--color-on-surface)]/80">
                 More work
               </p>
@@ -808,10 +811,40 @@ export default function App() {
                 href="https://servista-service-book.vercel.app/case-study"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-base leading-6 text-[var(--color-on-surface)] underline underline-offset-4 hover:opacity-80 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-on-surface)]"
+                className="group block max-w-md mx-auto text-left rounded-[24px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-on-surface)]"
               >
-                Personal project: Servista case study
-                <span className="sr-only"> (opens in a new tab)</span>
+                <GlassCard padding="md" className="flex items-center gap-4 sm:gap-6 group-hover:border-white/20">
+                  <img
+                    src={servistaThumb}
+                    alt="Servista dashboard"
+                    width={80}
+                    height={160}
+                    loading="lazy"
+                    className="h-40 w-auto rounded-[12px] flex-shrink-0"
+                  />
+                  <div className="flex flex-col items-start gap-4">
+                    <div className="flex flex-col items-start gap-2">
+                      <img
+                        src={servistaIcon}
+                        alt=""
+                        width={40}
+                        height={40}
+                        className="w-10 h-10 rounded-[12px]"
+                      />
+                      <span className="text-base leading-6 text-[var(--color-on-surface)]">
+                        Personal project: Servista case study
+                      </span>
+                    </div>
+                    {/* Looks like a button; the whole card is the link, so it stays out of the accessible name */}
+                    <span aria-hidden="true" className="whitespace-nowrap">
+                      <Badge color="blue" variant="glow">
+                        View
+                        <ArrowUpRight className="w-4 h-4 ml-2" />
+                      </Badge>
+                    </span>
+                  </div>
+                  <span className="sr-only"> (opens in a new tab)</span>
+                </GlassCard>
               </a>
             </div>
           </div>
